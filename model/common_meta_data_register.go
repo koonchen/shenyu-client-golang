@@ -32,4 +32,5 @@ type MetaDataRegister struct {
 	PluginNames      []interface{} `json:"pluginNames"`
 	RegisterMetaData bool          `json:"registerMetaData"`
 	TimeMillis       int64         `json:"timeMillis"`
+	NamespaceId      string        `json:"namespaceId"`
 }

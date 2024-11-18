@@ -27,4 +27,5 @@ type URIRegister struct {
 	RPCType     string `json:"rpcType"`
 	Host        string `json:"host"`
 	Port        string `json:"port"`
+	NamespaceId string `json:"namespaceId"`
 }

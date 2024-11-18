@@ -68,6 +68,7 @@ func RegisterMetaData(adminTokenData model.AdminTokenData, metaData *model.MetaD
 	params["contextPath"] = metaData.ContextPath
 	params["host"] = metaData.Host
 	params["port"] = metaData.Port
+	params["namespaceId"] = metaData.NamespaceId
 
 	if metaData.RPCType != "" {
 		params["rpcType"] = metaData.RPCType
@@ -107,6 +108,7 @@ func UrlRegister(adminTokenData model.AdminTokenData, urlMetaData *model.URIRegi
 	params["host"] = urlMetaData.Host
 	params["port"] = urlMetaData.Port
 	params["rpcType"] = urlMetaData.RPCType
+	params["namespaceId"] = urlMetaData.NamespaceId
 
 	tokenRequest := initShenYuCommonRequest(headers, params, constants.REGISTER_URI, "")
 
